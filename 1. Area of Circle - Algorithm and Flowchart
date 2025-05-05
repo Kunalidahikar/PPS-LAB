@@ -1,0 +1,18 @@
+def calculate_circle_area(radius):
+    # Define the value of pi
+    pi = 3.14
+    
+    # Check if radius is within the valid range
+    if 0.0 <= radius <= 100.0:
+        # Calculate area
+        area = pi * radius * radius
+        # Print the result with six decimal places
+        print(f"Area of circle = {area:.6f}")
+    else:
+        print("Enter a positive value upto 100")
+
+# Read input as float
+radius = float(input("Enter the radius : "))
+
+# Call function to calculate and print the area
+calculate_circle_area(radius)
