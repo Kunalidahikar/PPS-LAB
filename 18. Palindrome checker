@@ -1,0 +1,9 @@
+def is_palindrome(s):
+	s=s.replace("","").lower()
+
+	if s==s[::-1]:
+		print("palindrome")
+	else:
+		print("not a palindrome")
+test_string=  input().strip()
+is_palindrome(test_string)
