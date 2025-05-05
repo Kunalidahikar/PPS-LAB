@@ -1,0 +1,7 @@
+import string
+def remove_punctuation(sentence):
+	modified_sentence="".join(char for char in sentence if char not in string.punctuation)
+	print(modified_sentence.strip())
+
+sentence = input().strip()
+remove_punctuation(sentence)
