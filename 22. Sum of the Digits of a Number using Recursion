@@ -1,0 +1,15 @@
+'''
+Complete the given function using recursive approach,
+and also write the driver code test the functionality,
+and pass all the visible and hidden test cases.
+
+'''
+def Sumof(n):
+	if n<10:
+		return n
+	return(n%10) + Sumof(n//10)
+	
+n=int(input())
+print(Sumof(n))
+
+# take user input and add the function call
