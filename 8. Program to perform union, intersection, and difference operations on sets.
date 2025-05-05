@@ -1,0 +1,13 @@
+a = list(map(int,input("Set A: ").split()))
+A = set(a)
+b = list(map(int,input("Set B: ").split()))
+B = set(b)
+
+#Write your code here to perform different StopIteration
+union_result= A.union(B)
+intersection_result = A.intersection(B)
+difference_result = A.difference(B)
+
+print(f"Union:  {union_result}")
+print(f"Intersection:  {intersection_result}")
+print(f"Difference:  {difference_result}")
