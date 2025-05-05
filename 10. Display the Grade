@@ -1,0 +1,18 @@
+marks = []
+for i in range(5):
+	mark = float(input(f"subject {i+1}: "))
+	marks.append(mark)
+average_marks = sum(marks) / len(marks)
+grade = ""
+if 90 <= average_marks <= 100:
+	grade = "A"
+elif 80 <= average_marks <= 89:
+	grade = "B"
+elif 70 <= average_marks <= 79:
+	grade = "C"
+elif 60 <= average_marks <= 69:
+	grade = "D"
+else:
+	grade = "F"
+print(f"Average Marks: {average_marks:.2f}")
+print(f"Grade: {grade}")
